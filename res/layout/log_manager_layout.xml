@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/log_bg_manager"
+    android:orientation="vertical" >
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp" >
+
+        <Button
+            android:id="@+id/log_manager_back"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/bt_back" />
+
+         <TextView
+             android:id="@+id/log_manager_name"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_marginLeft="35dp"
+             android:text="无极剑圣日志信息"
+             android:textColor="#FFFFFF"
+             android:textSize="20dp" />
+
+         <Button
+            android:id="@+id/log_manager_write"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="43dp"
+            android:background="@drawable/log_bt_write" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp" >
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="主题：" />
+
+        <EditText
+            android:id="@+id/log_manager_title"
+            android:layout_width="120dp"
+            android:layout_height="35dp"
+            
+            android:background="@drawable/edit"
+            android:ems="10"
+            android:inputType="textNoSuggestions" >
+
+            <requestFocus />
+        </EditText>
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="日期：" />
+
+        <TextView
+            android:id="@+id/log_manager_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2013-12-26" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp" >
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="内容：" />
+
+        <EditText
+            android:id="@+id/log_manager_content"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:background="@drawable/edit"
+            android:ems="10"
+            android:inputType="textNoSuggestions" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:gravity="bottom"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginTop="50dp" >
+
+            <Button
+                android:id="@+id/log_manager_resise_ok"
+                android:layout_width="0dp"
+                 android:layout_weight="1"
+                android:layout_height="wrap_content"
+                
+                android:layout_marginLeft="20dp"
+                android:background="#e5b394"
+                android:text="修改完成"
+                android:textColor="#FFFFFF"
+                android:textSize="15dp" />
+
+            <Button
+                android:id="@+id/log_manager_delete"
+                 android:layout_width="0dp"
+                 android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:background="#e5b394"
+                android:text="删除日记"
+                android:textColor="#FFFFFF"
+                android:textSize="15dp" />
+
+            <Button
+                android:id="@+id/log_manager_comment"
+                  android:layout_width="0dp"
+                 android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:background="#e5b394"
+                android:text="评论日志"
+                android:textColor="#FFFFFF"
+                android:textSize="15dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="15dp"
+            android:text="本日志的相关评论" />
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/log_manager_listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </ListView>
+
+</LinearLayout>

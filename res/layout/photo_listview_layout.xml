@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/log_bg_list"
+    android:orientation="vertical" >
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp" >
+        
+        <Button
+            android:id="@+id/photo_back"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/bt_back" />
+
+         <TextView
+             android:id="@+id/photo_title"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_marginLeft="35dp"
+             android:layout_weight="0.50"
+             android:text="我的相册"
+             android:textColor="#FFFFFF"
+             android:textSize="20dp" />
+
+
+         <Button
+             android:id="@+id/photo_add"
+             android:layout_width="40dp"
+             android:layout_height="40dp"
+             android:background="@drawable/album_add" />
+        
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lv_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </ListView>
+
+</LinearLayout>

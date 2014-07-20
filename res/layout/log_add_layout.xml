@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/log_bg_listview"
+    android:orientation="vertical" >
+    
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp" >
+
+        <Button
+            android:id="@+id/log_add_back"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/bt_back" />
+
+
+
+        <TextView
+            android:id="@+id/log_add_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35dp"
+            android:layout_weight="0.32"
+            android:text="无极剑圣写日志"
+            android:textColor="#FFFFFF"
+            android:textSize="20dp" />
+
+
+        <Button
+            android:id="@+id/log_add_write"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center|right"
+            android:background="@drawable/log_bt_write" />
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center" >
+
+        <EditText
+            android:id="@+id/log_add_theme"
+            android:layout_width="180dp"
+            android:layout_height="50dp"
+            android:background="@drawable/edit"
+            android:ems="10"
+            android:hint="日志主题"
+            android:inputType="textNoSuggestions" >
+
+            <requestFocus />
+        </EditText>
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center" >
+
+      
+
+        <EditText
+            android:id="@+id/log_add_content"
+            android:layout_width="280dp"
+            android:layout_height="250dp"
+            android:background="@drawable/edit"
+            android:ems="10"
+            android:gravity="top"
+            android:hint="是时候写点东西了"
+            android:inputType="textNoSuggestions" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="125dp"
+        android:gravity="bottom"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp" >
+
+            <Button
+                android:id="@+id/log_add_asve"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:background="#e5b394"
+                android:text="保存草稿"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/log_add_submit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:background="#e5b394"
+                android:text="提交日志"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/log_add_again"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="45dp"
+                android:background="#e5b394"
+                android:text="再写一遍"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
